@@ -1,0 +1,42 @@
+
+$primary-color: White;
+$back-color: black;
+$secondary-color: yellow;
+
+@import '../Components/Navbar/navbar';
+@import '../Components/Hero/hero';
+@import '../Components/Hero/sliderimages';
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  text-align: center;
+  background-color: $back-color;
+}
+.info-container {
+  margin-top: 50px;
+  .title {
+    text-align: center;
+    font-size: 2rem;
+    color: white;
+    padding: 2% 0;
+    text-shadow: -4px 4px 20px #ffff00;
+  }
+  .info-text {
+    color: white;
+    width: 800px;
+    text-align: center;
+    margin: auto;
+    font-size: 20px;
+    margin-bottom: 50px;
+  }
+}
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
