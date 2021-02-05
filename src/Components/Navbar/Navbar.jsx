@@ -4,7 +4,8 @@ import { Link } from 'react-router-dom';
 function Navbar() {
     const [click, setClick] = useState(false);
 
-    const handleClick = () => setClick(!click);
+        //wanted to use repsonvie bar functionality
+    // const handleClick = () => setClick(!click);
     const closeMobileMenu = () => setClick(false);
 
     return (
@@ -14,9 +15,10 @@ function Navbar() {
                 <Link to="/" className="navbar-logo">
                     GarageInsomnia
                 </Link>
-                <div className='menu-icon' onClick={handleClick}>
+                {/* //wanted to use repsonvie bar functionality */}
+                {/* <div className='menu-icon' onClick={handleClick}>
                     <i className={click ? 'fas fa-times' : 'fas fa-bars'} />
-                </div>
+                </div> */}
                 <ul className={click ? 'nav-menu active' : 'nav-menu'}>
                     <li className='nav-item'>
                         <Link to='/' className='nav-links' onClick={closeMobileMenu}>
