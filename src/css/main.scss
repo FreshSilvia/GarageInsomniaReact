@@ -6,9 +6,13 @@ $secondary-color: yellow;
 @import '../Components/Navbar/navbar';
 @import '../Components/Hero/hero';
 @import '../Components/Hero/sliderimages';
+@import '../Components/Footer/footer';
+@import '../Components/Card/card';
+@import '../Components/Form/form';
+@import '../Components/Filter/filter';
 
 body {
-  margin: 0;
+  margin: -12px;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
@@ -17,6 +21,11 @@ body {
   padding: 0;
   text-align: center;
   background-color: $back-color;
+  .products-header {
+    color: white;
+    font-size: 100px;
+    text-shadow: 0px 0px 20px grey;
+  }
 }
 .info-container {
   margin-top: 50px;
@@ -36,7 +45,18 @@ body {
     margin-bottom: 50px;
   }
 }
+.Contact-header {
+  color: white;
+  font-size: 60px;
+}
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+@media screen and (max-width:800) {
+  .navbar {
+      display: inline-block;
+      width: 100%;
+  }
 }

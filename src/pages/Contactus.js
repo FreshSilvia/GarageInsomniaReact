@@ -1,13 +1,16 @@
-import ImageSlider from '../Components/Hero/ImageSlider';
-import { SliderData } from '../Components/Hero/SliderData';
+import React, { useEffect } from 'react';
 import '../css/main.css';
-// import Hero from '../Components/Hero/Hero';
+import ContactForm from '../Components/Form/ContactForm';
 
 const Contactus = () => {
+
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
+
     return (
         <>
-            <ImageSlider slides={SliderData}/>
-            {/* <Hero /> */}
+            <ContactForm/>
         </>
     )
 }

@@ -1,0 +1,76 @@
+.card-container {
+    // stlyes each specific card
+    display: flex;
+    border: 3px solid black;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px yellow; 
+    margin: 10px 10px 10px 10px;
+    justify-content: space-evenly;
+    align-content: center;
+    color: white;
+    .card-product {
+        margin: 20px;
+        padding: 10px;
+        height: 800px;
+        width: auto;
+    }
+    .image {
+        height: 400px;
+        width: 400px;
+        border-radius: 10px;
+        background-color: white;
+        object-fit: scale-down;
+    }
+    .title {
+        font-size: 25px;
+    }
+    .price {
+        font-size: 20px;
+        color: red;
+    }
+    .descript {
+        font-size: 20px;
+    }
+    .btn {
+        padding: 20px 50px;
+        background-color: grey;
+        font-size: 15px;
+        cursor: pointer;
+        border-radius: 10px;
+    }
+}
+
+.cardList-container {
+    // styles the whole container for the cards
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 10px 10px;
+}
+
+@media screen and (max-width: 768px ) {
+    .cardList-container {
+        grid-template-columns: repeat(1, 1fr);
+        width: 500px;
+        padding: 10px;
+        margin: auto;
+    }
+    .card-product {
+        margin: 50px;
+        padding: 50px;
+        height: 1200px;
+        width: 100px;
+    }
+}
+
+@media screen and (max-width: 375px ) {
+    .cardList-container {
+        display: inline-block;
+        // justify-content: center;
+        // align-content: center;
+    }
+    .card-product {
+        height: 1500px;
+        margin: 50px;
+        padding: 50px;
+    }
+}
